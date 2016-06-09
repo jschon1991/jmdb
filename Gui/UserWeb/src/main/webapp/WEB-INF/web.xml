@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+	<display-name>JMDBUserWeb</display-name>
+
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>/JMDBUserWeb</param-value>
+	</context-param>
+
+	<!--
+	<servlet>
+		<servlet-name>StudentiServlet</servlet-name>
+		<servlet-class>sk.umb.progea.autoservis.web.servlet.sprava.StudentiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentiServlet</servlet-name>
+		<url-pattern>/prihlaseny/studentiServlet</url-pattern>
+	</servlet-mapping>
+	-->
+
+	<!-- <welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/chyba.jsp</location>
+	</error-page>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Zabezpecena oblast</web-resource-name>
+			<url-pattern>/prihlaseny/*</url-pattern>
+			<http-method>DELETE</http-method>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+			<http-method>PUT</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+			<role-name>user</role-name>
+			<role-name>tp_editor</role-name>
+		</auth-constraint>
+		<user-data-constraint>
+			<description>SSL not required</description>
+			<transport-guarantee>NONE</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>AutoservisRealm</realm-name>
+		<form-login-config>
+			<form-login-page>/prihlasovanie.jsp</form-login-page>
+			<form-error-page>/prihlasovanie.jsp?chyba=1</form-error-page>
+		</form-login-config>
+	</login-config>
+
+	<security-role>
+		<role-name>admin</role-name>
+	</security-role>
+	<security-role>
+		<role-name>user</role-name>
+	</security-role>
+	<security-role>
+		<role-name>tp_editor</role-name>
+	</security-role>
+
+	<session-config>
+		<session-timeout>120</session-timeout>
+	</session-config> -->
+
+</web-app>
+
